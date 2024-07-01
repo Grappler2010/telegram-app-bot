@@ -1,6 +1,6 @@
 import TelegramBot from 'node-telegram-bot-api';
 
-const token = '7491215529:AAFr0qZ07D7HNCNQ1mJ9Djlr5DnGDjeHtWU';
+const token = process.env.TELEGRAM_BOT_TOKEN!;
 
 const bot = new TelegramBot(token, {polling: true});
 const webAppUrl = "https://classy-kleicha-07875d.netlify.app";
