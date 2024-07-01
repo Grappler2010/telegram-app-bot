@@ -4,7 +4,7 @@ import 'dotenv/config';
 const token = process.env.TELEGRAM_BOT_TOKEN!;
 
 const bot = new TelegramBot(token, {polling: true});
-const webAppUrl = "https://classy-kleicha-07875d.netlify.app";
+const webAppUrl = "https://telegram-app-production-7f3a.up.railway.app";
 
 bot.on('message', async (msg) => {
   const chatId = msg.chat.id;
