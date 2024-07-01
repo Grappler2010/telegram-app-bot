@@ -3,8 +3,6 @@ import 'dotenv/config';
 
 const token = process.env.TELEGRAM_BOT_TOKEN!;
 
-console.log(token);
-
 const bot = new TelegramBot(token, {polling: true});
 const webAppUrl = "https://classy-kleicha-07875d.netlify.app";
 
